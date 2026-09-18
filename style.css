@@ -374,3 +374,130 @@ p {
 
     font-size: 25px;
 }
+
+.aarti {
+    min-height: 650px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: radial-gradient(
+        circle at center,
+        #2b140d 0%,
+        #0d0806 55%
+    );
+
+    transition: 1s;
+}
+
+.aarti.lit {
+    background: radial-gradient(
+        circle at center,
+        #4b210c 0%,
+        #0d0806 65%
+    );
+}
+
+.diya-area {
+    position: relative;
+
+    width: 220px;
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 30px 0;
+}
+
+.diya {
+    font-size: 90px;
+
+    position: relative;
+
+    z-index: 2;
+
+    filter: grayscale(0.7);
+
+    transition: 0.5s;
+}
+
+.aarti.lit .diya {
+    filter: grayscale(0);
+
+    filter: drop-shadow(
+        0 0 25px #d4af37
+    );
+}
+
+.flame {
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    background: #d4af37;
+
+    border-radius: 50%;
+
+    filter: blur(25px);
+
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+.aarti.lit .flame {
+    opacity: 0.9;
+
+    animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+.light-btn {
+    padding: 14px 28px;
+
+    background: #d4af37;
+
+    border: none;
+
+    color: #0d0806;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.light-btn:hover {
+    transform: translateY(-3px);
+}
+
+.aarti-status {
+    margin-top: 18px;
+
+    color: #d4af37;
+
+    min-height: 25px;
+}

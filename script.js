@@ -77,3 +77,31 @@ ecoOptions.forEach(function (option) {
     });
 
 });
+
+// Aarti interaction
+
+const lightBtn = document.getElementById("lightBtn");
+const aarti = document.querySelector(".aarti");
+const aartiStatus = document.getElementById("aartiStatus");
+
+
+lightBtn.addEventListener("click", function () {
+
+    aarti.classList.toggle("lit");
+
+    if (aarti.classList.contains("lit")) {
+
+        lightBtn.textContent = "AARTI IS LIT";
+
+        aartiStatus.textContent =
+            "May the light bring wisdom, peace and joy.";
+
+    } else {
+
+        lightBtn.textContent = "LIGHT THE DIYA";
+
+        aartiStatus.textContent = "";
+
+    }
+
+});

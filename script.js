@@ -51,3 +51,29 @@ modal.addEventListener("click", function (event) {
     }
 
 });
+
+// Eco score
+
+const ecoOptions = document.querySelectorAll(".eco-option");
+const score = document.getElementById("score");
+
+let ecoScore = 0;
+
+
+ecoOptions.forEach(function (option) {
+
+    option.addEventListener("click", function () {
+
+        if (!option.classList.contains("selected")) {
+
+            option.classList.add("selected");
+
+            ecoScore++;
+
+            score.textContent = ecoScore;
+
+        }
+
+    });
+
+});

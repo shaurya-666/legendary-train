@@ -306,3 +306,71 @@ p {
 
     cursor: pointer;
 }
+
+.eco {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.eco-image img {
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 5px;
+}
+
+.eco-options {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+.eco-option {
+    text-align: left;
+
+    padding: 15px 18px;
+
+    background: #1a0b0b;
+
+    border: 1px solid rgba(212, 175, 55, 0.15);
+
+    color: #f5e6c8;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.eco-option:hover {
+    border-color: #d4af37;
+}
+
+.eco-option.selected {
+    border-color: #d4af37;
+
+    color: #d4af37;
+}
+
+.eco-option span {
+    margin-right: 12px;
+}
+
+.eco-score {
+    color: #b9afa2;
+}
+
+.eco-score strong {
+    color: #d4af37;
+
+    font-size: 25px;
+}

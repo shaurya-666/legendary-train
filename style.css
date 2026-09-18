@@ -246,3 +246,63 @@ p {
 
     font-size: 13px;
 }
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 2000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-box {
+    position: relative;
+
+    background: #1a0b0b;
+
+    border: 1px solid rgba(212, 175, 55, 0.4);
+
+    padding: 45px;
+
+    max-width: 500px;
+
+    text-align: center;
+}
+
+.modal-icon {
+    font-size: 40px;
+}
+
+.modal-box h2 {
+    margin: 15px 0;
+}
+
+.close-btn {
+    position: absolute;
+
+    right: 15px;
+    top: 10px;
+
+    background: none;
+
+    border: none;
+
+    color: #d4af37;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}

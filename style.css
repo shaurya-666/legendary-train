@@ -168,3 +168,81 @@ p {
 
     letter-spacing: 1px;
 }
+
+.traditions {
+    background: #120907;
+
+    text-align: center;
+}
+
+.traditions h2 {
+    font-size: clamp(30px, 4vw, 50px);
+
+    margin-bottom: 25px;
+}
+
+.tradition-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.tradition-card {
+    background: #1a0b0b;
+
+    border: 1px solid rgba(212, 175, 55, 0.15);
+
+    padding: 35px 25px;
+
+    min-height: 270px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.tradition-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+.card-icon {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.tradition-card h3 {
+    color: #d4af37;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.tradition-card p {
+    font-size: 14px;
+}
+
+.learn-btn {
+    margin-top: auto;
+
+    background: none;
+
+    border: none;
+
+    color: #d4af37;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}

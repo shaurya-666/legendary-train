@@ -260,18 +260,21 @@ p {
     font-size: 14px;
 }
 
-.learn-btn {
+.explore-btn {
     margin-top: auto;
-
-    background: none;
-
-    border: none;
-
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #d4af37;
     color: #d4af37;
-
+    font-size: 12px;
+    letter-spacing: 1px;
     cursor: pointer;
+    transition: 0.3s;
+}
 
-    font-size: 13px;
+.explore-btn:hover {
+    background: #d4af37;
+    color: #0d0806;
 }
 
 .modal {

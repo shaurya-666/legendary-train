@@ -105,3 +105,15 @@ lightBtn.addEventListener("click", function () {
     }
 
 });
+
+const mobileLinks = document.querySelectorAll(".mobile-menu a");
+
+mobileLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        mobileMenu.classList.remove("active");
+
+    });
+
+});
